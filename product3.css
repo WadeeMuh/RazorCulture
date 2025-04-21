@@ -1,0 +1,109 @@
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.home-link {
+    width: 75px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.bar-link1, .bar-link2 {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-family: 'Special Gothic Expanded One';
+    white-space: nowrap;
+    margin-right: 75px
+}
+
+.bar-link1:hover, .bar-link2:hover {
+    background-color: #c0c0c0;
+}
+
+.logo {
+    width: 250px;
+    display: block;
+    margin: 50px auto 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    gap: 100px;
+    max-width: 1400px;
+}
+
+.product-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 100px;
+}
+
+.product-img {
+    width: 500px;
+}
+
+.product-name {
+    color: rgb(161, 0, 0);
+    font-family: 'Rubik Wet Paint', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 30px;
+    white-space: nowrap;
+}
+
+.product-description {
+    color: rgb(255, 255, 255);
+    font-family: 'Rubik Wet Paint', sans-serif;
+    font-size: 2rem;
+    max-width: 500px;
+    white-space: normal;
+    line-height: 1.3;
+    margin-bottom: 80px
+}
+
+.buy-now-btn {
+    font-size: 1.5rem;
+    font-family: 'Rubik Wet Paint';
+    color: white;
+    background-color: rgb(161, 0, 0);
+    border: none;
+    border-radius: 100px;
+    padding: 15px 30px;
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.6);
+    cursor: pointer;
+    transition: all .15s ease;
+    width: 200px;
+    margin-bottom: 150px;
+}
+
+.buy-now-btn:hover {
+    background-color: rgb(200, 0, 0);
+    box-shadow: 0 0 60px rgba(255, 50, 50, 0.8);
+    transform: scale(1.02);
+}
+
+.buy-now-btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.9);
+}

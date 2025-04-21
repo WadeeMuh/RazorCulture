@@ -1,0 +1,85 @@
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.home-link {
+    width: 75px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.bar-link1, .bar-link2 {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-family: 'Special Gothic Expanded One';
+    white-space: nowrap;
+    margin-right: 75px
+}
+
+.bar-link1:hover, .bar-link2:hover {
+    background-color: #c0c0c0;
+}
+
+.logo {
+    width: 250px;
+    display: block;
+    margin: 50px auto 0;
+    position: relative;
+    z-index: 2;
+    margin-bottom: -30px
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.adult-haircut, .child-haircut, .haircut-and-beard, .haircut-and-facial {
+    font-size: 2rem;
+    font-family: 'Rubik Wet Paint';
+    color: white;
+    background-color: rgb(161, 0, 0);
+    border: none;
+    border-radius: 100px;
+    padding: 20px 40px;
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.6);
+    cursor: pointer;
+    transition: all .15s ease;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.adult-haircut:hover, .child-haircut:hover, .haircut-and-beard:hover, .haircut-and-facial:hover {
+    background-color: rgb(200, 0, 0);
+    box-shadow: 0 0 60px rgba(255, 50, 50, 0.8);
+    transform: scale(1.02);
+}
+
+.adult-haircut:active, .child-haircut:active, .haircut-and-beard:active, .haircut-and-facial:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.9);
+}
+
+.haircut-and-facial {
+    margin-bottom: 100px
+}
