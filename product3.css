@@ -29,7 +29,7 @@
     font-size: 1.5rem;
     font-family: 'Special Gothic Expanded One';
     white-space: nowrap;
-    margin-right: 75px
+    margin-right: 75px;
 }
 
 .bar-link1:hover, .bar-link2:hover {
@@ -46,22 +46,27 @@
 
 .product-container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: 30px auto;
-    gap: 100px;
+    gap: 50px;
     max-width: 1400px;
+    padding: 0 20px;
 }
 
 .product-text-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-right: 100px;
+    margin-right: 0;
+    text-align: left;
 }
 
 .product-img {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 
 .product-name {
@@ -79,7 +84,7 @@
     max-width: 500px;
     white-space: normal;
     line-height: 1.3;
-    margin-bottom: 80px
+    margin-bottom: 40px;
 }
 
 .buy-now-btn {
@@ -94,7 +99,7 @@
     cursor: pointer;
     transition: all .15s ease;
     width: 200px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 .buy-now-btn:hover {
@@ -106,4 +111,58 @@
 .buy-now-btn:active {
     transform: scale(0.98);
     box-shadow: 0 0 40px rgba(255, 0, 0, 0.9);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .product-container {
+        gap: 30px;
+    }
+    
+    .product-text-container {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .product-name {
+        white-space: normal;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 200px;
+        margin: 70px auto 20px;
+    }
+    
+    .product-name {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .product-description {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+    
+    .buy-now-btn {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-name {
+        font-size: 3rem;
+    }
+    
+    .product-description {
+        font-size: 1.5rem;
+    }
+    
+    .buy-now-btn {
+        font-size: 1.3rem;
+        padding: 12px 25px;
+        width: 180px;
+    }
 }

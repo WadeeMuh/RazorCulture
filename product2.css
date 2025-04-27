@@ -40,37 +40,44 @@
     width: 250px;
     display: block;
     margin: 50px auto 0;
-    margin-bottom: -100px;
+    margin-bottom: 100px;
     position: relative;
     z-index: 2;
 }
 
 .product-container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: 30px auto;
-    gap: 100px;
+    gap: 50px;
     max-width: 1400px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .product-text-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-right: 100px;
+    margin-right: 0;
+    max-width: 100%;
 }
 
 .product-img {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 
 .product-name {
     color: rgb(161, 0, 0);
     font-family: 'Rubik Wet Paint', sans-serif;
     font-size: 4rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     white-space: nowrap;
+    margin-top: 50px
 }
 
 .product-description {
@@ -80,7 +87,7 @@
     max-width: 500px;
     white-space: normal;
     line-height: 1.3;
-    margin-bottom: 80px
+    margin-bottom: 40px;
 }
 
 .buy-now-btn {
@@ -95,7 +102,7 @@
     cursor: pointer;
     transition: all .15s ease;
     width: 200px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 .buy-now-btn:hover {
@@ -107,4 +114,128 @@
 .buy-now-btn:active {
     transform: scale(0.98);
     box-shadow: 0 0 40px rgba(255, 0, 0, 0.9);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .product-container {
+        gap: 50px;
+    }
+    
+    .product-name {
+        font-size: 2.5rem;
+    }
+    
+    .product-description {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .product-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .product-text-container {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .product-name {
+        white-space: normal;
+        text-align: center;
+    }
+    
+    .logo {
+        margin-bottom: -50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        height: 60px;
+    }
+    
+    .home-link {
+        width: 60px;
+    }
+    
+    .bar-link1, .bar-link2 {
+        font-size: 1.2rem;
+        padding: 8px 12px;
+        margin-right: 10px;
+    }
+    
+    .logo {
+        width: 200px;
+        margin-bottom: -30px;
+    }
+    
+    .product-name {
+        font-size: 2rem;
+    }
+    
+    .product-description {
+        font-size: 1.1rem;
+        max-width: 400px;
+    }
+    
+    .buy-now-btn {
+        font-size: 1.2rem;
+        width: 180px;
+        padding: 12px 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .top-bar {
+        height: 50px;
+    }
+    
+    .home-link {
+        width: 50px;
+    }
+    
+    .bar-link1, .bar-link2 {
+        font-size: 1rem;
+        padding: 6px 10px;
+    }
+    
+    .logo {
+        width: 150px;
+        margin-bottom: -20px;
+    }
+    
+    .product-name {
+        font-size: 1.5rem;
+    }
+    
+    .product-description {
+        font-size: 1rem;
+        max-width: 300px;
+    }
+    
+    .buy-now-btn {
+        font-size: 1rem;
+        width: 160px;
+        padding: 10px 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .bar-link1, .bar-link2 {
+        font-size: 0.9rem;
+        padding: 5px 8px;
+    }
+    
+    .product-name {
+        font-size: 1.3rem;
+    }
+    
+    .product-description {
+        font-size: 0.9rem;
+        max-width: 250px;
+    }
 }
