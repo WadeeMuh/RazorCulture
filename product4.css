@@ -113,7 +113,6 @@
     box-shadow: 0 0 40px rgba(255, 0, 0, 0.9);
 }
 
-/* Responsive adjustments */
 @media (max-width: 1200px) {
     .product-container {
         gap: 50px;
@@ -140,22 +139,13 @@
         white-space: normal;
         text-align: center;
     }
-    
-    .logo {
-        margin-bottom: -50px;
-    }
-    
+
     .buy-now-btn {
         margin-bottom: 100px;
     }
 }
 
 @media (max-width: 768px) {
-    .logo {
-        width: 200px;
-        margin-bottom: -30px;
-    }
-    
     .product-name {
         font-size: 3.5rem;
     }
@@ -171,11 +161,6 @@
 }
 
 @media (max-width: 576px) {
-    .logo {
-        width: 180px;
-        margin-bottom: -20px;
-    }
-    
     .product-name {
         font-size: 3rem;
         margin-bottom: 20px;

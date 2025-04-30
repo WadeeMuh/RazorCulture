@@ -83,3 +83,18 @@
 .haircut-and-facial {
     margin-bottom: 100px
 }
+
+@media (max-width: 768px) {
+    .bar-link1, .bar-link2 {
+        font-size: 1.3rem;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .bar-link1, .bar-link2 {
+        font-size: 1.1rem;
+        padding: 8px 12px;
+        margin-right: 10px;
+    }
+}

@@ -29,7 +29,7 @@
     font-size: 1.5rem;
     font-family: 'Special Gothic Expanded One';
     white-space: nowrap;
-    margin-right: 75px
+    margin-right: 75px;
 }
 
 .bar-link1:hover, .bar-link2:hover {
@@ -48,28 +48,33 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 100px;
-    margin: 20px 50px;
+    gap: 50px;
+    margin: 20px 20px;
     margin-bottom: 70px;
+}
+
+.social-media img {
+    width: 90px;
 }
 
 .excut-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 100px;
-    margin: 20px 50px;
+    gap: 30px;
+    margin: 20px 20px;
 }
 
 .excut1, .excut2, .excut3, .excut4 {
-    width: 250px;
+    max-width: 250px;
+    width: 100%;
     border-radius: 50px;
     margin-top: 50px;
 }
 
 .about-area {
     background-color: white;
-    padding: 80px 250px;
+    padding: 40px 20px;
     margin-top: 50px;
 }
 
@@ -80,14 +85,113 @@
 
 .abt-us-title {
     font-family: 'Special Gothic Expanded One', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: black;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .abt-us-pg {
     font-family: Arial, sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.6;
     color: black;
+    padding: 0 10px;
+}
+
+@media (max-width: 1200px) {
+    .about-area {
+        padding: 60px 50px;
+    }
+}
+
+@media (max-width: 992px) { 
+    .social-media {
+        gap: 40px;
+    }
+    
+    .excut-container {
+        gap: 40px;
+    }
+    
+    .about-area {
+        padding: 50px 40px;
+    }
+    
+    .abt-us-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .social-media img {
+        width: 85px;
+    }
+    
+    .excut1, .excut2, .excut3, .excut4 {
+        max-width: 200px;
+    }
+    
+    .about-area {
+        padding: 40px 30px;
+    }
+    
+    .abt-us-title {
+        font-size: 1.6rem;
+    }
+    
+    .abt-us-pg {
+        font-size: 0.9rem;
+    }
+    
+    .bar-link1, .bar-link2 {
+        font-size: 1.3rem;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .social-media {
+        gap: 30px;
+    }
+    
+    .social-media img {
+        width: 75px;
+    }
+    
+    .excut-container {
+        gap: 20px;
+    }
+    
+    .excut1, .excut2, .excut3, .excut4 {
+        max-width: 180px;
+    }
+    
+    .about-area {
+        padding: 30px 20px;
+    }
+    
+    .abt-us-title {
+        font-size: 1.4rem;
+    }
+    
+    .abt-us-pg {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .social-media {
+        gap: 20px;
+    }
+    
+    .excut1, .excut2, .excut3, .excut4 {
+        max-width: 150px;
+    }
+    
+    .bar-link1, .bar-link2 {
+        font-size: 1.1rem;
+        padding: 8px 12px;
+        margin-right: 10px;
+    }
 }

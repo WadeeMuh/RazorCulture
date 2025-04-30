@@ -116,28 +116,24 @@
     box-shadow: 0 0 40px rgba(255, 0, 0, 0.9);
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
     .product-container {
         gap: 50px;
     }
     
-    .product-name {
-        font-size: 2.5rem;
-    }
-    
-    .product-description {
-        font-size: 1.3rem;
+    .product-text-container {
+        margin-right: 50px;
     }
 }
 
 @media (max-width: 992px) {
     .product-container {
         flex-direction: column;
-        text-align: center;
+        gap: 50px;
     }
     
     .product-text-container {
+        margin-right: 0;
         align-items: center;
         text-align: center;
     }
@@ -147,95 +143,59 @@
         text-align: center;
     }
     
-    .logo {
-        margin-bottom: -50px;
+    .buy-now-btn {
+        margin-bottom: 100px;
     }
 }
 
 @media (max-width: 768px) {
-    .top-bar {
-        height: 60px;
-    }
-    
-    .home-link {
-        width: 60px;
-    }
-    
-    .bar-link1, .bar-link2 {
-        font-size: 1.2rem;
-        padding: 8px 12px;
-        margin-right: 10px;
-    }
-    
-    .logo {
-        width: 200px;
-        margin-bottom: -30px;
-    }
-    
     .product-name {
-        font-size: 2rem;
+        font-size: 3.5rem;
     }
     
     .product-description {
-        font-size: 1.1rem;
-        max-width: 400px;
+        font-size: 1.8rem;
+        margin-bottom: 60px;
     }
     
     .buy-now-btn {
-        font-size: 1.2rem;
-        width: 180px;
-        padding: 12px 24px;
+        margin-bottom: 80px;
     }
 }
 
 @media (max-width: 576px) {
-    .top-bar {
-        height: 50px;
-    }
-    
-    .home-link {
-        width: 50px;
-    }
-    
-    .bar-link1, .bar-link2 {
-        font-size: 1rem;
-        padding: 6px 10px;
-    }
-    
-    .logo {
-        width: 150px;
-        margin-bottom: -20px;
-    }
-    
     .product-name {
-        font-size: 1.5rem;
+        font-size: 3rem;
+        margin-bottom: 20px;
     }
     
     .product-description {
-        font-size: 1rem;
-        max-width: 300px;
+        font-size: 1.6rem;
+        margin-bottom: 40px;
     }
     
     .buy-now-btn {
-        font-size: 1rem;
-        width: 160px;
-        padding: 10px 20px;
-        margin-bottom: 30px;
+        font-size: 1.3rem;
+        padding: 12px 25px;
+        margin-bottom: 60px;
+    }
+    
+    .bar-link1, .bar-link2 {
+        font-size: 1.3rem;
+        margin-right: 20px;
     }
 }
 
 @media (max-width: 400px) {
-    .bar-link1, .bar-link2 {
-        font-size: 0.9rem;
-        padding: 5px 8px;
-    }
-    
     .product-name {
-        font-size: 1.3rem;
+        font-size: 2.5rem;
     }
     
     .product-description {
-        font-size: 0.9rem;
-        max-width: 250px;
+        font-size: 1.4rem;
+    }
+    
+    .buy-now-btn {
+        width: 180px;
     }
 }
